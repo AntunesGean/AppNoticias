@@ -15,6 +15,7 @@
 		BB318548293B7A2E00F58EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB318547293B7A2E00F58EEC /* Assets.xcassets */; };
 		BB31854B293B7A2E00F58EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB318549293B7A2E00F58EEC /* LaunchScreen.storyboard */; };
 		BB5539F42945ED270023E59F /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = BB5539F32945ED270023E59F /* file.json */; };
+		BB5539F62945FC360023E59F /* NewYorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5539F52945FC360023E59F /* NewYorkTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BB31854A293B7A2E00F58EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB31854C293B7A2E00F58EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB5539F32945ED270023E59F /* file.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file.json; sourceTree = "<group>"; };
+		BB5539F52945FC360023E59F /* NewYorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				BB31854C293B7A2E00F58EEC /* Info.plist */,
 				BB0122ED29454875001E57C4 /* ResponseNews.swift */,
 				BB5539F32945ED270023E59F /* file.json */,
+				BB5539F52945FC360023E59F /* NewYorkTableViewCell.swift */,
 			);
 			path = AppNoticias;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				BB0122EE29454875001E57C4 /* ResponseNews.swift in Sources */,
 				BB318543293B7A2D00F58EEC /* MainTableViewController.swift in Sources */,
 				BB31853F293B7A2D00F58EEC /* AppDelegate.swift in Sources */,
+				BB5539F62945FC360023E59F /* NewYorkTableViewCell.swift in Sources */,
 				BB318541293B7A2D00F58EEC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

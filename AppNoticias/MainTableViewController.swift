@@ -34,13 +34,18 @@ class MainTableViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as UITableViewCell
-    cell.textLabel?.text = news[indexPath.row].title
+    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! NewYorkTableViewCell
+    
+    let newsData = news[indexPath.row]
+    cell.prepare(with: newsData) // jogando para o NewTorkTabbleViewCell
+    
     return cell
   }
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    print("Index path => \(indexPath.row)")
+    if let url = URL(string: news[indexPath.row].url) {
+      UIApplication.shared.open(url)
+    }
   }
 
 }

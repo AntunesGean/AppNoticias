@@ -1,5 +1,5 @@
 //
-//  DecodeAPI.swift
+//  ResponseNews.swift
 //  AppNoticias
 //
 //  Created by Gean Antunes on 10/12/22.
@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - ResponseNews
 struct ResponseNews: Codable {
     let status, copyright: String
     let numResults: Int
@@ -19,6 +20,7 @@ struct ResponseNews: Codable {
     }
 }
 
+// MARK: - Result
 struct ResultNews: Codable {
     let uri: String
     let url: String

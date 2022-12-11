@@ -17,22 +17,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="UNP-sd-IGR" style="IBUITableViewCellStyleDefault" id="htY-2n-zcb">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="312" id="htY-2n-zcb" customClass="NewYorkTableViewCell" customModule="AppNoticias" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="312"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="htY-2n-zcb" id="Fxw-Jc-bQZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="312"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UNP-sd-IGR">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Men Convicted of Killing Malcolm X Will Be Exonerated After Decades" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="4vE-6w-5Q0">
+                                            <rect key="frame" x="10" y="5" width="394" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a9L-wo-g89">
+                                            <rect key="frame" x="10" y="51" width="394" height="219"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Ashley Southall and Jonah E. Bromwich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="r0G-0D-r5M">
+                                            <rect key="frame" x="10" y="280" width="394" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="r0G-0D-r5M" secondAttribute="bottom" constant="14" id="14A-yc-aID"/>
+                                        <constraint firstItem="r0G-0D-r5M" firstAttribute="trailing" secondItem="4vE-6w-5Q0" secondAttribute="trailing" id="2wv-IH-1FP"/>
+                                        <constraint firstItem="r0G-0D-r5M" firstAttribute="leading" secondItem="4vE-6w-5Q0" secondAttribute="leading" id="Ckj-Lw-4QK"/>
+                                        <constraint firstItem="a9L-wo-g89" firstAttribute="leading" secondItem="4vE-6w-5Q0" secondAttribute="leading" id="ExM-Tv-u6H"/>
+                                        <constraint firstItem="4vE-6w-5Q0" firstAttribute="leading" secondItem="Fxw-Jc-bQZ" secondAttribute="leading" constant="10" id="Ffj-b9-328"/>
+                                        <constraint firstItem="r0G-0D-r5M" firstAttribute="top" secondItem="a9L-wo-g89" secondAttribute="bottom" constant="10" id="I5o-Xt-sTB"/>
+                                        <constraint firstItem="a9L-wo-g89" firstAttribute="top" secondItem="4vE-6w-5Q0" secondAttribute="bottom" constant="10" id="QHX-i6-maE"/>
+                                        <constraint firstItem="a9L-wo-g89" firstAttribute="trailing" secondItem="4vE-6w-5Q0" secondAttribute="trailing" id="RKm-aJ-WIO"/>
+                                        <constraint firstItem="4vE-6w-5Q0" firstAttribute="top" secondItem="Fxw-Jc-bQZ" secondAttribute="top" constant="5" id="VDf-O6-l25"/>
+                                        <constraint firstAttribute="trailing" secondItem="4vE-6w-5Q0" secondAttribute="trailing" constant="10" id="j8M-d1-TEI"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="by" destination="r0G-0D-r5M" id="XlQ-ME-bhW"/>
+                                    <outlet property="imageNews" destination="a9L-wo-g89" id="IVj-nT-Ohl"/>
+                                    <outlet property="title" destination="4vE-6w-5Q0" id="BzQ-ur-lre"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -44,7 +69,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z1N-LF-nCQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-747" y="98"/>
+            <point key="canvasLocation" x="-747.82608695652175" y="97.767857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tfg-Qm-ONL">
