@@ -7,27 +7,35 @@
 
 import UIKit
 
-//class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 class MainTableViewController: UITableViewController {
-
-//  @IBOutlet weak var tableView: UITableView!
   
-  var items: [String] = ["Item01", "Item02", "Item03", "Item04", "Item05", "Item06"]
+  var news: [ResultNews] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    loadNews()
+  }
+  
+  func loadNews() {
+    let fileUrl = Bundle.main.url(forResource: "file", withExtension: "json")!
+    let jsonData = try! Data(contentsOf: fileUrl)
     
-//    tableView.delegate = self
-//    tableView.dataSource = self
+    do {
+      let data = try JSONDecoder().decode([NewYorkNews].self, from: jsonData)
+      news = data[0].results
+    } catch {
+      print(error.localizedDescription)
+    }
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return items.count
+    print("count => \(news.count)")
+    return news.count
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as UITableViewCell
-    cell.textLabel?.text = items[indexPath.row]
+    cell.textLabel?.text = news[indexPath.row].title
     return cell
   }
   
@@ -36,4 +44,3 @@ class MainTableViewController: UITableViewController {
   }
 
 }
-
