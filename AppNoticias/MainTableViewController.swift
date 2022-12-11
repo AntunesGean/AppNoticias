@@ -21,10 +21,10 @@ class MainTableViewController: UITableViewController {
     let jsonData = try! Data(contentsOf: fileUrl)
     
     do {
-      let data = try JSONDecoder().decode([NewYorkNews].self, from: jsonData)
+      let data = try JSONDecoder().decode([ResponseNews].self, from: jsonData)
       news = data[0].results
     } catch {
-      print(error.localizedDescription)
+      print("error => \(error.localizedDescription)")
     }
   }
   

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB0122EE29454875001E57C4 /* DecodeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0122ED29454875001E57C4 /* DecodeAPI.swift */; };
+		BB0122EE29454875001E57C4 /* ResponseNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0122ED29454875001E57C4 /* ResponseNews.swift */; };
 		BB31853F293B7A2D00F58EEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31853E293B7A2D00F58EEC /* AppDelegate.swift */; };
 		BB318541293B7A2D00F58EEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB318540293B7A2D00F58EEC /* SceneDelegate.swift */; };
 		BB318543293B7A2D00F58EEC /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB318542293B7A2D00F58EEC /* MainTableViewController.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BB0122ED29454875001E57C4 /* DecodeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeAPI.swift; sourceTree = "<group>"; };
+		BB0122ED29454875001E57C4 /* ResponseNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseNews.swift; sourceTree = "<group>"; };
 		BB31853B293B7A2D00F58EEC /* AppNoticias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppNoticias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB31853E293B7A2D00F58EEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB318540293B7A2D00F58EEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 				BB318547293B7A2E00F58EEC /* Assets.xcassets */,
 				BB318549293B7A2E00F58EEC /* LaunchScreen.storyboard */,
 				BB31854C293B7A2E00F58EEC /* Info.plist */,
-				BB0122ED29454875001E57C4 /* DecodeAPI.swift */,
+				BB0122ED29454875001E57C4 /* ResponseNews.swift */,
 				BB5539F32945ED270023E59F /* file.json */,
 			);
 			path = AppNoticias;
@@ -145,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB0122EE29454875001E57C4 /* DecodeAPI.swift in Sources */,
+				BB0122EE29454875001E57C4 /* ResponseNews.swift in Sources */,
 				BB318543293B7A2D00F58EEC /* MainTableViewController.swift in Sources */,
 				BB31853F293B7A2D00F58EEC /* AppDelegate.swift in Sources */,
 				BB318541293B7A2D00F58EEC /* SceneDelegate.swift in Sources */,
