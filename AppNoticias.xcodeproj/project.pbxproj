@@ -62,18 +62,42 @@
 		BB31853D293B7A2D00F58EEC /* AppNoticias */ = {
 			isa = PBXGroup;
 			children = (
-				BB31853E293B7A2D00F58EEC /* AppDelegate.swift */,
-				BB318540293B7A2D00F58EEC /* SceneDelegate.swift */,
-				BB318542293B7A2D00F58EEC /* MainTableViewController.swift */,
-				BB318544293B7A2D00F58EEC /* Main.storyboard */,
+				BB92AC47294A1637005A128A /* Model */,
+				BB92AC49294A164B005A128A /* View */,
+				BB92AC4A294A1652005A128A /* Controller */,
 				BB318547293B7A2E00F58EEC /* Assets.xcassets */,
-				BB318549293B7A2E00F58EEC /* LaunchScreen.storyboard */,
 				BB31854C293B7A2E00F58EEC /* Info.plist */,
-				BB0122ED29454875001E57C4 /* ResponseNews.swift */,
-				BB5539F32945ED270023E59F /* file.json */,
-				BB5539F52945FC360023E59F /* NewYorkTableViewCell.swift */,
 			);
 			path = AppNoticias;
+			sourceTree = "<group>";
+		};
+		BB92AC47294A1637005A128A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB0122ED29454875001E57C4 /* ResponseNews.swift */,
+				BB5539F32945ED270023E59F /* file.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB92AC49294A164B005A128A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB5539F52945FC360023E59F /* NewYorkTableViewCell.swift */,
+				BB318544293B7A2D00F58EEC /* Main.storyboard */,
+				BB318549293B7A2E00F58EEC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB92AC4A294A1652005A128A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB318542293B7A2D00F58EEC /* MainTableViewController.swift */,
+				BB318540293B7A2D00F58EEC /* SceneDelegate.swift */,
+				BB31853E293B7A2D00F58EEC /* AppDelegate.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

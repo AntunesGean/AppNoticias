@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  AppNoticias
-//
-//  Created by Gean Antunes on 03/12/22.
-//
-
 import UIKit
 
 class MainTableViewController: UITableViewController {
